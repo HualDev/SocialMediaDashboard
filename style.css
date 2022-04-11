@@ -163,7 +163,8 @@ hr{
     align-items: center;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
-    margin: 1.5rem auto;    
+    margin: 1.5rem auto;
+    width: 90%; 
 }
 
 .details img{
@@ -188,5 +189,43 @@ hr{
 .today div{
     color: var(--brightRed);
     margin-left: 0.3rem;
+    
+}
+
+@media (min-width:550px) {
+    hr{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toggle{
+        margin-left: 0.5rem;
+    }
+
+    .media{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+    }
+
+    .overview{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+    }
+}
+
+@media (min-width:950px) {
+    .media, .overview{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
     
 }
