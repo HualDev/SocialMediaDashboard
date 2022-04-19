@@ -58,7 +58,7 @@ hr{
 
 .mode{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .mode span{
@@ -72,6 +72,7 @@ hr{
     border-radius: 3rem;
     background-image: linear-gradient(to right,var(--tBlue),var(--tGreen));
     padding: 0.2rem;
+    cursor: pointer;
 }
 
 .circle{
@@ -175,7 +176,7 @@ hr{
     color: var(--desaturatedBlue-Text);
 }
 
-.details span{
+.span{
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -228,4 +229,31 @@ hr{
         grid-template-columns: auto auto auto auto;
     }
     
+}
+
+.light{
+    background-color: white;
+    color: black;
+    
+}
+
+.socialLight{
+    background-color: var(--lightGrayishBlue-CardBG);
+    color: black;
+}
+
+.todayLight{
+    color: var(--darkGrayishBlue-Text);
+}
+
+.toggleLight{
+    background-color: var(--toggleLight);
+    background-image: none;
+    display: flex;
+    justify-content: end;
+}
+
+.circleLight{
+    background-color: white;
+
 }
